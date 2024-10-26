@@ -12,6 +12,7 @@ export class AppService {
 
   @Cron('45 * * * * *')
   handleCron() {
-    this.logger.debug('Called when the current second is 45');
+    console.log('console: called when the current second is 45')
+    this.logger.debug('logger: called when the current second is 45');
   }
 }
