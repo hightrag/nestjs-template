@@ -6,8 +6,8 @@ export class AppService {
   private readonly logger = new Logger(AppService.name);
 
 
-  getHello(): string {
-    return 'Hello World! v2';
+  getHello() {
+    return { message: 'Hello World! v2', env: process.env };
   }
 
   @Cron('45 * * * * *')
