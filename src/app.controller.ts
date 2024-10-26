@@ -9,4 +9,9 @@ export class AppController {
   getHello(): unknown {
     return this.appService.getHello();
   }
+
+  @Get('/ping')
+  ping(): unknown {
+    return 'Ping from nestjs hosted on Vercel';
+  }
 }
