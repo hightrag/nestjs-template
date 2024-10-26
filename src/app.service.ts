@@ -7,7 +7,7 @@ export class AppService {
 
 
   getHello() {
-    return { message: 'Hello World! v2', env: process.env };
+    return 'Hello World! v3';
   }
 
   @Cron('45 * * * * *')
